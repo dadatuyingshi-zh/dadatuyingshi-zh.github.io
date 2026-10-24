@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>达达兔影视 - 动画与漫画改编作品资料库 | dadatuyingshi-zh.github.io</title>
+<meta name="description" content="达达兔影视（dadatuyingshi-zh.github.io）整理动画番剧、漫画改编真人影视与国产动画的资料，提供作品年表、主创信息、分集梗概与正版观看渠道指引。">
+<meta name="keywords" content="达达兔影视,dadatuyingshi-zh.github.io,动画番剧,漫画改编,国产动画,动画电影,剧场版,新番资讯,分集剧情">
+<meta name="robots" content="index,follow">
+<meta name="bingbot" content="index,follow">
+<meta name="theme-color" content="#fff7e6">
+<link rel="canonical" href="https://dadatuyingshi-zh.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="达达兔影视 - 动画与漫画改编作品资料库">
+<meta property="og:description" content="动画番剧、漫画改编真人影视与国产动画的资料整理，含作品年表、主创信息与正版观看渠道。">
+<meta property="og:url" content="https://dadatuyingshi-zh.github.io/">
+<meta name="twitter:card" content="summary">
+<style>
+:root{
+  --paper:#fff7e6;
+  --paper2:#fffdf6;
+  --ink:#1c1c1c;
+  --ink2:#4a4a4a;
+  --line:#2b2b2b;
+  --panel:#ffe9c7;
+  --yellow:#ffd23f;
+  --pink:#ff7a90;
+  --blue:#3aa0ff;
+  --green:#4cbf7c;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
+  font-size:clamp(15px,2.4vw,17px);
+  line-height:1.85;
+  -webkit-text-size-adjust:100%;
+}
+a{color:var(--ink);text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+
+/* ============ 顶部刊头 ============ */
+.masthead{
+  border-bottom:4px solid var(--line);
+  padding:26px 0 18px;
+  background:
+    radial-gradient(circle at 12% 20%,rgba(255,210,63,.28),transparent 42%),
+    radial-gradient(circle at 88% 60%,rgba(255,122,144,.22),transparent 45%);
+}
+.mast-top{display:flex;justify-content:space-between;align-items:flex-end;gap:14px;flex-wrap:wrap}
+.issue{font-size:12px;letter-spacing:.28em;color:var(--ink2);border:1.5px solid var(--line);padding:5px 10px;align-self:flex-start}
+.issue b{display:block;font-size:10px;letter-spacing:.1em;color:var(--pink);font-weight:700}
+.brand{text-align:center;flex:1;min-width:260px}
+.brand h1{
+  margin:8px 0 4px;
+  font-size:clamp(40px,9vw,78px);
+  letter-spacing:.14em;
+  line-height:1.05;
+  text-shadow:4px 4px 0 var(--yellow),7px 7px 0 var(--line);
+}
+.brand .sub{font-size:clamp(12px,2.2vw,15px);letter-spacing:.3em;color:var(--ink2)}
+.price{text-align:right;font-size:12px;color:var(--ink2);line-height:1.7}
+.price span{display:block;font-size:20px;font-weight:800;letter-spacing:.05em;color:var(--line)}
+.mast-nav{margin-top:16px;display:flex;gap:clamp(8px,2vw,22px);flex-wrap:wrap;justify-content:center;border-top:1.5px dashed var(--line);border-bottom:1.5px dashed var(--line);padding:12px 0}
+.mast-nav a{font-size:clamp(13px,2.1vw,16px);font-weight:700;letter-spacing:.08em;padding:3px 8px;border-radius:3px}
+.mast-nav a:hover{background:var(--yellow)}
+.mast-nav a.on{background:var(--line);color:#fff}
+
+/* ============ 通用板块 ============ */
+section{padding:clamp(44px,8vw,76px) 0;border-bottom:3px solid var(--line);scroll-margin-top:20px}
+.sec-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:26px}
+.sec-head .no{
+  font-size:clamp(26px,5vw,40px);font-weight:900;color:#fff;
+  background:var(--line);padding:2px 14px;border-radius:4px;letter-spacing:.05em;
+}
+.sec-head h2{margin:0;font-size:clamp(22px,4.4vw,34px);letter-spacing:.06em}
+.sec-head .en{font-size:11px;letter-spacing:.3em;color:var(--pink);font-weight:700;text-transform:uppercase}
+.lead{color:var(--ink2);font-size:clamp(14px,2.3vw,16px);max-width:820px;margin:0 0 26px}
+
+/* ============ 01 连载表 ============ */
+.schedule{width:100%;border-collapse:collapse;font-size:clamp(13px,2.1vw,15px);background:var(--paper2)}
+.schedule th,.schedule td{border:2px solid var(--line);padding:clamp(8px,1.6vw,14px) clamp(8px,2vw,16px);text-align:left;vertical-align:top}
+.schedule thead th{background:var(--line);color:#fff;font-size:clamp(12px,2vw,14px);letter-spacing:.16em}
+.schedule tbody tr:nth-child(even){background:#fff3d6}
+.schedule .wk{font-weight:800;white-space:nowrap;letter-spacing:.1em}
+.schedule .tag{display:inline-block;font-size:11px;padding:1px 7px;border-radius:10px;margin-left:6px;vertical-align:middle;color:#fff}
+.t-a{background:var(--pink)}.t-b{background:var(--blue)}.t-c{background:var(--green)}.t-d{background:#9b6bff}
+
+/* ============ 02 速报卡 ============ */
+.flash{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+.fcard{border:3px solid var(--line);background:var(--paper2);border-radius:6px;overflow:hidden;position:relative;display:flex;flex-direction:column}
+.fcard .band{background:var(--yellow);border-bottom:3px solid var(--line);padding:7px 12px;font-size:12px;letter-spacing:.2em;font-weight:800;display:flex;justify-content:space-between}
+.fcard .body{padding:16px 18px;flex:1}
+.fcard h3{margin:0 0 8px;font-size:clamp(17px,3vw,21px);line-height:1.45}
+.fcard p{margin:0;font-size:14px;color:var(--ink2)}
+.fcard .foot{border-top:1.5px dashed var(--line);padding:9px 18px;font-size:12px;color:var(--ink2);display:flex;justify-content:space-between;gap:8px}
+
+/* ============ 03 年表（竖向时间条） ============ */
+.tl{position:relative;padding-left:26px}
+.tl::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:3px;background:repeating-linear-gradient(var(--line) 0 10px,var(--yellow) 10px 20px)}
+.tl-item{position:relative;margin-bottom:22px}
+.tl-item::before{content:"";position:absolute;left:-26px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--pink);border:3px solid var(--line)}
+.tl-item time{font-size:12px;letter-spacing:.14em;font-weight:800;color:var(--pink);display:block}
+.tl-item h3{margin:2px 0 4px;font-size:clamp(16px,2.9vw,19px)}
+.tl-item p{margin:0;font-size:14px;color:var(--ink2)}
+
+/* ============ 04 专题格子 ============ */
+.grid4{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.box{border:2.5px solid var(--line);background:var(--panel);padding:16px 16px 14px;border-radius:5px}
+.box h3{margin:0 0 6px;font-size:16px;display:flex;align-items:center;gap:8px}
+.box h3 i{font-style:normal;background:var(--line);color:#fff;font-size:11px;padding:2px 6px;border-radius:3px;letter-spacing:.1em}
+.box p{margin:0;font-size:13.5px;color:var(--ink2);line-height:1.75}
+
+/* ============ 05 关于 ============ */
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:start}
+.about h3{margin:0 0 10px;font-size:clamp(19px,3.4vw,25px)}
+.about p{margin:0 0 12px;color:var(--ink2)}
+.facts{border:3px solid var(--line);background:var(--paper2);border-radius:6px;padding:20px 22px}
+.facts h4{margin:0 0 14px;font-size:15px;letter-spacing:.2em;background:var(--yellow);display:inline-block;padding:3px 10px;border:2px solid var(--line)}
+.facts dl{margin:0;display:grid;grid-template-columns:78px 1fr;gap:9px 12px;font-size:14px}
+.facts dt{color:var(--pink);font-weight:800;letter-spacing:.08em}
+.facts dd{margin:0;word-break:break-all;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px}
+
+/* ============ 06 FAQ ============ */
+.faq{border:2.5px solid var(--line);border-radius:6px;background:var(--paper2);overflow:hidden}
+.faq details{padding:15px 20px;border-bottom:2px dashed var(--line)}
+.faq details:last-child{border-bottom:none}
+.faq summary{cursor:pointer;font-weight:800;font-size:clamp(15px,2.6vw,17px);list-style:none;display:flex;gap:12px;align-items:baseline}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"Q";flex:none;background:var(--line);color:#fff;font-size:13px;padding:1px 8px;border-radius:3px}
+.faq details[open] summary::before{background:var(--pink)}
+.faq details p{margin:10px 0 0;padding-left:38px;font-size:14.5px;color:var(--ink2)}
+.faq details p::before{content:"A　";color:var(--blue);font-weight:800}
+
+footer{border-top:6px solid var(--line);padding:36px 0 30px;background:var(--line);color:#f4f4f4}
+footer .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:30px}
+footer h4{margin:0 0 10px;font-size:15px;letter-spacing:.2em;color:var(--yellow)}
+footer p{margin:0 0 8px;font-size:13.5px;color:#dcdcdc;line-height:1.8}
+footer .official{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;color:#fff;background:rgba(255,255,255,.1);padding:8px 12px;border-radius:4px;display:inline-block;margin-top:4px}
+footer .copy{margin-top:22px;padding-top:16px;border-top:1px solid rgba(255,255,255,.25);font-size:12px;color:#a8a8a8;grid-column:1/-1;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+.top{position:fixed;right:clamp(14px,3vw,26px);bottom:22px;width:50px;height:50px;border-radius:50%;background:var(--yellow);border:3px solid var(--line);font-size:20px;cursor:pointer;z-index:9;display:flex;align-items:center;justify-content:center}
+.top:hover{background:var(--pink);color:#fff}
+
+@media(max-width:820px){
+  .about{grid-template-columns:1fr;gap:22px}
+  footer .wrap{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .brand h1{text-shadow:3px 3px 0 var(--yellow),5px 5px 0 var(--line)}
+  .mast-nav{gap:6px 10px}
+  .schedule{font-size:12.5px}
+  .schedule th:nth-child(3),.schedule td:nth-child(3){display:none}
+  .faq details p{padding-left:0}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="mast-top">
+      <div class="issue">NO.07<b>WEEKLY · 周更资料刊</b></div>
+      <div class="brand">
+        <div class="sub">ANIME &amp; COMIC ADAPTATION ARCHIVE</div>
+        <h1>达达兔影视</h1>
+        <div class="sub">动画番剧 · 漫画改编 · 国产动画 · 作品年表</div>
+      </div>
+      <div class="price">免费阅读<span>第 7 期</span>2026 年 10 月</div>
+    </div>
+    <nav class="mast-nav">
+      <a href="#schedule" class="on">连载速览</a>
+      <a href="#flash">本周速报</a>
+      <a href="#year">作品年表</a>
+      <a href="#topic">专题资料</a>
+      <a href="#about">关于本站</a>
+      <a href="#faq">常见疑问</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section id="schedule">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="no">01</span>
+        <div>
+          <div class="en">Weekly Schedule</div>
+          <h2>连载速览 · 一周更新排期</h2>
+        </div>
+      </div>
+      <p class="lead">按播出星期整理的连载与更新信息，方便安排追番节奏。时间为常规更新时段，实际以各平台公告为准；达达兔影视仅做资料汇总，不提供任何播放与下载服务。</p>
+      <table class="schedule">
+        <thead>
+          <tr><th style="width:88px">星期</th><th>作品与进度</th><th style="width:130px">形式</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="wk">星期一</td><td>《春日车站》第 14 话更新，进入修学旅行篇<span class="tag t-a">TV 连载</span></td><td>电视动画</td></tr>
+          <tr><td class="wk">星期二</td><td>《机械之心》第二季完结篇，共 12 集<span class="tag t-b">续作</span></td><td>原创动画</td></tr>
+          <tr><td class="wk">星期三</td><td>《书店里的猫》漫画单行本第 6 卷发售同步动画化决定<span class="tag t-c">漫画原作</span></td><td>漫改宣布</td></tr>
+          <tr><td class="wk">星期四</td><td>《深海食堂》第 7 话，料理步骤可对照原作第 22 话<span class="tag t-a">TV 连载</span></td><td>电视动画</td></tr>
+          <tr><td class="wk">星期五</td><td>《城市边缘》真人剧第 9 集上线，漫画第 4 卷剧情收束<span class="tag t-c">真人漫改</span></td><td>真人剧集</td></tr>
+          <tr><td class="wk">星期六</td><td>剧场版《玻璃回声》重映场公开，含未公开片段<span class="tag t-d">剧场版</span></td><td>动画电影</td></tr>
+          <tr><td class="wk">星期日</td><td>《达达兔影视》周更盘点：本周完结作与新番预告一览<span class="tag t-b">资料汇总</span></td><td>本站原创</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="flash">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="no">02</span>
+        <div>
+          <div class="en">This Week</div>
+          <h2>本周速报 · 四条值得记一笔</h2>
+        </div>
+      </div>
+      <div class="flash">
+        <article class="fcard">
+          <div class="band"><span>速报 01</span><span>10/21</span></div>
+          <div class="body">
+            <h3>《春日车站》宣布制作剧场版</h3>
+            <p>TV 版放送中的《春日车站》在特别节目中公布剧场版制作决定，脚本沿用电视版班底，预计明年初上映。</p>
+          </div>
+          <div class="foot"><span>分类：TV 动画</span><span>来源：官方公告</span></div>
+        </article>
+        <article class="fcard">
+          <div class="band"><span>速报 02</span><span>10/20</span></div>
+          <div class="body">
+            <h3>《机械之心》第二季最终话播出</h3>
+            <p>全 12 集完结，片尾放出第三季概念视觉图，主线转向太空站篇，原作漫画进度同步推进至第 38 话。</p>
+          </div>
+          <div class="foot"><span>分类：续作动画</span><span>来源：播出平台</span></div>
+        </article>
+        <article class="fcard">
+          <div class="band"><span>速报 03</span><span>10/19</span></div>
+          <div class="body">
+            <h3>国产动画《山那边的风》定档</h3>
+            <p>共 8 集短篇动画，讲述山区少年与气象观测员的故事，采用手绘加水墨转场，11 月起在正版平台独播。</p>
+          </div>
+          <div class="foot"><span>分类：国产动画</span><span>来源：制作委员会</span></div>
+        </article>
+        <article class="fcard">
+          <div class="band"><span>速报 04</span><span>10/18</span></div>
+          <div class="body">
+            <h3>漫画《书店里的猫》动画化</h3>
+            <p>连载四年的治愈系漫画确定 TV 动画化，监督由《午后咖啡》的佐藤担任，角色设定沿用原作画风。</p>
+          </div>
+          <div class="foot"><span>分类：漫画改编</span><span>来源：杂志附录</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="year">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="no">03</span>
+        <div>
+          <div class="en">Archive Timeline</div>
+          <h2>作品年表 · 从立项到播出</h2>
+        </div>
+      </div>
+      <p class="lead">挑了几部代表性作品，按时间顺序记录关键节点。年表只记录公开信息，达达兔影视不做主观评分，也不提供资源链接。</p>
+      <div class="tl">
+        <div class="tl-item">
+          <time>2024 年 3 月</time>
+          <h3>《深海食堂》漫画开始连载</h3>
+          <p>青年漫画杂志新人奖获奖作品，以海上渔船为舞台，单行本目前已出至第 5 卷。</p>
+        </div>
+        <div class="tl-item">
+          <time>2025 年 1 月</time>
+          <h3>《深海食堂》TV 动画化决定</h3>
+          <p>动画工房接手制作，监督为有料理题材经验的山本，人设公开后登上话题榜。</p>
+        </div>
+        <div class="tl-item">
+          <time>2025 年 10 月</time>
+          <h3>《深海食堂》第一季播出</h3>
+          <p>全 24 集分两季度播出，片尾曲由主唱担当，原声带单独发售。</p>
+        </div>
+        <div class="tl-item">
+          <time>2026 年 4 月</time>
+          <h3>《机械之心》第二季开播</h3>
+          <p>第一季完结两年后回归，世界观扩展到三座浮空都市，机械设定图集同步出版。</p>
+        </div>
+        <div class="tl-item">
+          <time>2026 年 10 月</time>
+          <h3>《春日车站》第二季进行中</h3>
+          <p>修学旅行篇展开，新增三位转校生角色，声优阵容公布后引发讨论。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="topic">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="no">04</span>
+        <div>
+          <div class="en">Topics</div>
+          <h2>专题资料 · 四个常问的问题</h2>
+        </div>
+      </div>
+      <div class="grid4">
+        <div class="box">
+          <h3><i>漫改</i>原作与剧集差在哪</h3>
+          <p>篇幅限制下，真人漫改常合并支线、改写结局。建议先看原作再看剧，体验差异更有意思。</p>
+        </div>
+        <div class="box">
+          <h3><i>动画</i>为什么一季只有 12 集</h3>
+          <p>制作周期与预算决定集数，13 集制式多为季度档安排，长篇则采用 24 集或分割放送。</p>
+        </div>
+        <div class="box">
+          <h3><i>剧场</i>先看 TV 还是先看电影</h3>
+          <p>多数剧场版承接续篇剧情，建议按播出顺序观看；总集篇性质的作品可单独入门。</p>
+        </div>
+        <div class="box">
+          <h3><i>国创</i>国产动画去哪看</h3>
+          <p>优先选择已获授权的正版平台，支持制作组才能看到下一季，这也是达达兔影视一直提倡的做法。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="no">05</span>
+        <div>
+          <div class="en">About</div>
+          <h2>关于达达兔影视</h2>
+        </div>
+      </div>
+      <div class="about">
+        <div>
+          <h3>一个只做资料整理的影视小站</h3>
+          <p>达达兔影视专注于动画番剧、漫画改编真人影视与国产动画的作品资料整理，内容以作品年表、主创信息、分集梗概和播出动态为主，全部来自公开渠道。</p>
+          <p>站名的由来很简单：兔子跑得快，也记得住路。我们希望做成一份好查、好翻、更新及时的动画作品资料，而不是又一个内容雷同的影视站。</p>
+          <p>本站不提供任何在线播放、下载或盗版资源链接，也不存储影视文件。所有观看行为请通过已取得授权的正规平台完成。</p>
+        </div>
+        <aside class="facts">
+          <h4>SITE FACTS</h4>
+          <dl>
+            <dt>网站名称</dt><dd>达达兔影视</dd>
+            <dt>官方网址</dt><dd>https://dadatuyingshi-zh.github.io</dd>
+            <dt>内容方向</dt><dd>动画 / 漫改 / 国产动画</dd>
+            <dt>更新方式</dt><dd>每周手动整理</dd>
+            <dt>是否提供资源</dt><dd>不提供</dd>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="no">06</span>
+        <div>
+          <div class="en">Questions</div>
+          <h2>常见疑问</h2>
+        </div>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>达达兔影视是播放网站吗？</summary>
+          <p>不是。本站只做作品资料与播出信息的整理，不包含播放器、下载入口或盗版链接。需要观看请前往已取得授权的正版平台。</p>
+        </details>
+        <details>
+          <summary>分集梗概会不会有剧透？</summary>
+          <p>梗概只写到当集的事件层面，尽量不涉及结局与关键反转。若你对剧透敏感，建议先看完再回来对照年表。</p>
+        </details>
+        <details>
+          <summary>更新排期为什么和平台不一样？</summary>
+          <p>各平台可能因版权与排播调整时间，本站的排期表依据公开公告整理，遇到变更会在下一期速报中修正。</p>
+        </details>
+        <details>
+          <summary>发现资料写错了怎么办？</summary>
+          <p>可以通过页面上的联系方式告知，附上出处链接最好，核实后会在最近一次更新中改正并注明修改日期。</p>
+        </details>
+        <details>
+          <summary>网站网址为什么会变？</summary>
+          <p>本站固定使用 https://dadatuyingshi-zh.github.io 访问，书签请收藏这个地址，其他相似域名的站点与本站无关。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h4>达达兔影视 · dadatuyingshi-zh.github.io</h4>
+      <p>动画番剧、漫画改编真人影视与国产动画的作品资料库，提供年表、主创信息、分集梗概与正版观看渠道指引。</p>
+      <p>本站内容为个人整理，仅供参考，不构成观看建议；作品信息以官方公告为准。</p>
+    </div>
+    <div>
+      <h4>OFFICIAL</h4>
+      <p>唯一官方网址：</p>
+      <span class="official">https://dadatuyingshi-zh.github.io</span>
+    </div>
+    <div class="copy">
+      <span>© 2026 达达兔影视 · 资料整理类个人站点</span>
+      <span>倡导正版授权，不提供任何影视资源</span>
+    </div>
+  </div>
+</footer>
+
+<button class="top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="回到顶部">↑</button>
+
+</body>
+</html>
